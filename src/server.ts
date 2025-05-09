@@ -1,10 +1,6 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import { z } from "zod";
-import {
-  CallToolRequestSchema,
-  ListToolsRequestSchema,
-} from "@modelcontextprotocol/sdk/types.js";
+
 import { getHKList } from "./query.js"
 
 // 创建服务器实例
@@ -27,16 +23,5 @@ server.tool(
 console.log('server started', server);
 
 
-// async function main() {
-//   const transport = new StdioServerTransport();
-//   await server.connect(transport);
-//   console.error("Weather MCP Server running on stdio");
-// }
 
-// main().catch((error) => {
-//   console.error("Fatal error in main():", error);
-//   process.exit(1);
-// });
-
-// 修正为正确的导出语句
-export { server };
+export default  server ;

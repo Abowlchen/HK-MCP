@@ -12,14 +12,4 @@ const server = new McpServer({
 // 注册工具
 server.tool('get_hk_list', '获取王者荣耀的英雄列表', getHKList);
 console.log('server started', server);
-// async function main() {
-//   const transport = new StdioServerTransport();
-//   await server.connect(transport);
-//   console.error("Weather MCP Server running on stdio");
-// }
-// main().catch((error) => {
-//   console.error("Fatal error in main():", error);
-//   process.exit(1);
-// });
-// 修正为正确的导出语句
-export { server };
+export default server;

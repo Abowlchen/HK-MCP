@@ -1,4 +1,4 @@
-import { server } from './server.js';
+import server from './server.js';
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 
 async function main() {
