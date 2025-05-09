@@ -23,6 +23,16 @@ server.tool(
 
 console.log('server started', server);
 
+async function main() {
+  const server = createServer();
+  const transport = new StdioServerTransport();
+  await server.connect(transport);
+  // console.log("开始运行王者荣耀 MCP Server");
+}
+main().catch((error) => {
+  console.error("Fatal error in main():", error);
+  process.exit(1);
+});
 
 
 export default function createServer() {
