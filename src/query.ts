@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import axios from "axios";
 
 // 获取王者荣耀的英雄列表

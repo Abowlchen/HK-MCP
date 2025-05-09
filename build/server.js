@@ -1,8 +1,9 @@
+#!/usr/bin/env node
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { getHKList } from "./query.js";
 // 创建服务器实例
 const server = new McpServer({
-    name: "weather",
+    name: "hk",
     version: "1.0.0",
     capabilities: {
         resources: {},
