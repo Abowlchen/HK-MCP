@@ -12,4 +12,7 @@ const server = new McpServer({
 // 注册工具
 server.tool('get_hk_list', '获取王者荣耀的英雄列表', getHKList);
 console.log('server started', server);
-export default server;
+export default function createServer() {
+    return server;
+}
+;

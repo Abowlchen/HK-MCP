@@ -1,13 +1,18 @@
 {
   "name": "hk-mcp",
-  "version": "1.0.1",
+  "version": "1.0.8",
   "description": "",
   "main": "build/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build && node build/index.js",
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "debug": "npm run build && node --inspect build/index.js"
+  },
+  "bin": {
+    "hk-mcp": "./build/index.js"
   },
   "keywords": [],
   "author": "",

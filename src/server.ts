@@ -24,4 +24,6 @@ console.log('server started', server);
 
 
 
-export default  server ;
+export default function createServer() {
+  return server
+};
